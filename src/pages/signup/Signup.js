@@ -70,18 +70,6 @@ function Signup(){
                 value={credential.name}
                 />
             </label>
-<<<<<<< HEAD
-            {/* <label>
-                <span>Profile Picture:</span>
-                <input 
-                required 
-                type='file'
-                onChange={handleFileChange}
-                />
-                {thumbnailError && <div className='error'>{thumbnailError}</div>}
-            </label> */}
-=======
->>>>>>> 21c68e941061ad515da15b7b7114fe79cd8517bc
             <button className="btn">Sign up</button>
         </form>
     );
