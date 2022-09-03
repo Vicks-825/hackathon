@@ -1,39 +1,40 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 // Styles
 import './Signup.css'
 
 function Signup(){
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [displayName, setDisplayName] = useState('');
-    const [thumbnail, setThumbnail] = useState(null);
-    const [thumbnailError, setThumbnailError] = useState(null);
+    const host = 'http://localhost:5000';
+    const [credential, setCredential] = useState({name: "", email: "", password: ""});
+    let Navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault();
-        console.log(email, password, displayName, thumbnail);
-    }
+        //console.log(email, password, displayName, thumbnail);
+        const {name, email, password} = credential;
+        const response = await fetch(`${host}/api/auth/createuser`, {
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({name, email, password})
+          });
+          const json = await response.json();
+          console.log(json);
 
-    const handleFileChange = (e) => {
-        setThumbnail(null);
-        let selected = e.target.files[0];
-        // console.log(selected);
-        if(!selected){
-            setThumbnailError('Please select a file');
-            return;
-        }
-        if(!selected.type.includes('image')){
-            setThumbnailError('Selected file must be an image');
-            return;
-        }
-        if(selected.size > 100000){
-            setThumbnailError('Image file size must not exceed 100kb');
-            return;
-        }
-        setThumbnailError(null);
-        setThumbnail(selected);
-        console.log('Thumbnail updated');
+          if(json.success){
+            //save the auth token and redirect
+            console.log('signup success');
+            localStorage.setItem('token', json.authToken);
+            Navigate("/", { replace: true });
+          }
+          else{
+            alert("Internal server error");
+          }
+    }
+    const handleChange = (e) =>{
+        setCredential({...credential, [e.target.name]: e.target.value});
     }
 
     return (
@@ -44,8 +45,9 @@ function Signup(){
                 <input 
                 required 
                 type='email'
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
+                name='email'
+                onChange={handleChange}
+                value={credential.email}
                 />
             </label>
             <label>
@@ -53,8 +55,9 @@ function Signup(){
                 <input 
                 required 
                 type='password'
-                onChange={(e) => setPassword(e.target.value)}
-                value={password}
+                name='password'
+                onChange={handleChange}
+                value={credential.password}
                 />
             </label>
             <label>
@@ -62,10 +65,12 @@ function Signup(){
                 <input 
                 required 
                 type='text'
-                onChange={(e) => setDisplayName(e.target.value)}
-                value={displayName}
+                name='name'
+                onChange={handleChange}
+                value={credential.name}
                 />
             </label>
+<<<<<<< HEAD
             {/* <label>
                 <span>Profile Picture:</span>
                 <input 
@@ -75,6 +80,8 @@ function Signup(){
                 />
                 {thumbnailError && <div className='error'>{thumbnailError}</div>}
             </label> */}
+=======
+>>>>>>> 21c68e941061ad515da15b7b7114fe79cd8517bc
             <button className="btn">Sign up</button>
         </form>
     );

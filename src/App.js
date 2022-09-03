@@ -19,23 +19,6 @@ function App() {
         <Sidebar />
         <div className='container'>
           <Navbar />
-          {/* <Switch>
-            <Route exact path='/'>
-              <Dashboard />
-            </Route>
-            <Route path='/create'>
-              <Create />
-            </Route>
-            <Route path='/projects/:id'>
-              <Project />
-            </Route>
-            <Route path="/login">
-              <Login />
-            </Route>
-            <Route path="/signup">
-              <Signup />
-            </Route>
-          </Switch> */}
           <Routes>
           <Route exact path="/" element={<Dashboard/>}></Route>
           <Route exact path="/create" element={<Create/>}></Route>
