@@ -66,7 +66,7 @@ function Signup(){
                 value={displayName}
                 />
             </label>
-            <label>
+            {/* <label>
                 <span>Profile Picture:</span>
                 <input 
                 required 
@@ -74,7 +74,7 @@ function Signup(){
                 onChange={handleFileChange}
                 />
                 {thumbnailError && <div className='error'>{thumbnailError}</div>}
-            </label>
+            </label> */}
             <button className="btn">Sign up</button>
         </form>
     );
