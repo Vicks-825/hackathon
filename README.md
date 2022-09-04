@@ -4,4 +4,7 @@ The main objective to organise and distribute the tasks smoothly within the team
 
 So the platform that we have built includes the following basic features such as Login and Sign-Up.
 
-![alt text](http://url/to/img.png)
+<!-- ![alt text](http://url/to/img.png) -->
+![Login](https://user-images.githubusercontent.com/108086992/188300695-a1872df4-b02c-472d-bfdd-2b381643fd54.png)
+
+Then we have 
