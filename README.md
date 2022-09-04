@@ -7,4 +7,6 @@ So the platform that we have built includes the following basic features such as
 <!-- ![alt text](http://url/to/img.png) -->
 ![Login](https://user-images.githubusercontent.com/108086992/188300695-a1872df4-b02c-472d-bfdd-2b381643fd54.png)
 
+![Signup](https://user-images.githubusercontent.com/108086992/188300762-975c7491-2949-43c9-bea5-ede37bb07e85.png)
+
 Then we have 
