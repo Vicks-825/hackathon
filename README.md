@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+## This is a prototype of a project management tool  for better workflow of the tasks within the teams built as part of solving a problem in a hackathon conducted by Techsoc and WebOps & Blockchain club IIT Madras.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The main objective to organise and distribute the tasks smoothly within the team people and track the progress.
 
-## Available Scripts
+So the platform that we have built includes the following basic features such as Login and Sign-Up.
 
-In the project directory, you can run:
+<!-- ![alt text](http://url/to/img.png) -->
+![newLogin](https://user-images.githubusercontent.com/108086992/188301243-ba6ad4b9-a84c-4960-a0ed-9ec3c0ba834f.jpeg)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Signup](https://user-images.githubusercontent.com/108086992/188300762-975c7491-2949-43c9-bea5-ede37bb07e85.png)
+![newSignup](https://user-images.githubusercontent.com/108086992/188301269-560630d8-5816-46a0-b22a-43665469c0e5.jpeg)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+After you login the name will show as your profile and now you can create a new project by clicking on the new project tab as shown below. Here you can fill the details of the projects and when you hit the add project tab the dashboard will now contain your project
 
-### `npm test`
+![createP](https://user-images.githubusercontent.com/108086992/188301435-54a79655-a293-48cc-a4ed-b976bbf2b943.jpeg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After you create few projects the dashboards will appear as follows.
 
-### `npm run build`
+![newDash](https://user-images.githubusercontent.com/108086992/188301463-5fd3b1a5-1d86-4379-adca-57535fe70790.jpeg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Here you can click on any of the project and it will direct you to the project page where create sub-tasks and assign it to your team.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![EmptyP](https://user-images.githubusercontent.com/108086992/188301724-e24255f3-7385-4721-b921-1ce817fa8995.jpeg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For creating a new task you will have few fields such as name, description whom should it be assigned, category to and due date.
 
-### `npm run eject`
+![CreateT](https://user-images.githubusercontent.com/108086992/188301813-1921bd96-8da0-4204-a922-6183f3cb118f.jpeg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+After you add a few task your project dashboard will look like this where you will be able to see the tasks to be completed.
+![pDash](https://user-images.githubusercontent.com/108086992/188301862-56497d78-b740-401a-abf1-337214ca3f69.jpeg)
